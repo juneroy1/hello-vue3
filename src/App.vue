@@ -1,5 +1,7 @@
 <template>
  test
+ {{ name }}
+ {{ age }}
  <button @click="changeName('jq dev')">change name</button>
  <button @click="changeAge('24')">change name</button>
 </template>

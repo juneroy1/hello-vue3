@@ -1,8 +1,13 @@
 <template>
   <div>
-    <button @click="handleClick('title')">order by title</button>
-    <button @click="handleClick('salary')">order by salary</button>
-    <button @click="handleClick('location')">order by location</button>
+    <header>
+      <div class="order">
+        <button @click="handleClick('title')">order by title</button>
+        <button @click="handleClick('salary')">order by salary</button>
+        <button @click="handleClick('location')">order by location</button>
+      </div>
+    </header>
+   
     <JobList
     :jobs="jobs"
     :order="order"

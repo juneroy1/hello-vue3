@@ -5,3 +5,8 @@ body {
     font-family: 'Open Sans';
     background: #ece6d9;
 }
+
+@font-face {
+    font-family: HyliaSerif;
+    src: url("HyliaSerifBeta-Regular.otf") format('opentype');
+}

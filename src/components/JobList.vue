@@ -21,6 +21,7 @@
 
 <script lang="ts">
 import Job from "@/types/Job";
+import OrderTerm from "@/types/OrderTerm";
 import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
@@ -28,6 +29,10 @@ export default defineComponent({
     jobs: {
       required: true,
       type: Array as PropType<Job[]>,
+    },
+    order: {
+      required: true,
+      type: String as PropType<OrderTerm>,
     },
   },
   setup() {

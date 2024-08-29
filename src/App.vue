@@ -13,6 +13,11 @@ export default defineComponent({
     return {
       name: 'Jq'
     }
+   },
+   methods:{
+    changeName(name: string){
+      this.name = name
+    }
    }
 }); 
 </script>

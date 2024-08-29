@@ -7,19 +7,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, toRefs } from 'vue';
+import { defineComponent, reactive, ref, toRefs } from 'vue';
 // let age: string | number = 25
 export default defineComponent({
   name: 'App',
   components: {
   },
   setup(){
-    const state = reactive({
-      name: 'jq dev',
-      age: 25 as string | number
-    })
+    // const state = reactive({
+    //   name: 'jq dev',
+    //   age: 25 as string | number
+    // })
 
-    return {...toRefs(state)}
+    // return {...toRefs(state)}
+
+    const name = ref<string>('juneroy');
+      const age = ref<number | string>(25);
+    
+    return { name, age}
   },
   //  data(){
   //   return {

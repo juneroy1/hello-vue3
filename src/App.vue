@@ -1,6 +1,10 @@
 <template>
   <div>
     <header>
+      <div class="title">
+        <img src="./assets/php.svg" alt="php" width="100">
+        <h1>Jq Jobs</h1>        
+      </div>
       <div class="order">
         <button @click="handleClick('title')">order by title</button>
         <button @click="handleClick('salary')">order by salary</button>

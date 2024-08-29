@@ -1,4 +1,5 @@
 <template>
+  <div></div>
   <!-- test
   {{ name }}
   {{ age }}
@@ -11,7 +12,6 @@ import { defineComponent, reactive, ref, toRefs } from "vue";
 // let age: string | number = 25
 export default defineComponent({
   name: "App",
-  components: {},
   setup() {
     // const state = reactive({
     //   name: 'jq dev',
@@ -31,13 +31,13 @@ export default defineComponent({
   //     age: 25 as string | number,
   //   }
   //  },
-  methods: {
-    // changeName(name: string) {
-    //   this.name = name;
-    // },
-    // changeAge(age: string | number) {
-    //   this.age = age;
-    // },
-  },
+  // methods: {
+  //   // changeName(name: string) {
+  //   //   this.name = name;
+  //   // },
+  //   // changeAge(age: string | number) {
+  //   //   this.age = age;
+  //   // },
+  // },
 });
 </script>

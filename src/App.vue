@@ -19,6 +19,9 @@ export default defineComponent({
    methods:{
     changeName(name: string){
       this.name = name
+    },
+    changeAge(age: string){
+      this.age = age
     }
    }
 }); 

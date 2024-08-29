@@ -1,5 +1,8 @@
 <template>
   <div>
+    <button @click="handleClick('title')">order by title</button>
+    <button @click="handleClick('salary')">order by salary</button>
+    <button @click="handleClick('location')">order by location</button>
     <JobList
     :jobs="jobs"
     />
@@ -47,7 +50,11 @@ export default defineComponent({
       {title: 'jq22', location: 'lon tes2t2', salary: 1020.22111, id: '5'}
     ])
 
-    return {jobs}
+    const handleClick = (term:string) => {
+
+    }
+
+    return {jobs, handleClick}
   },
   //  data(){
   //   return {

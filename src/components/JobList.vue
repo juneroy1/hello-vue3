@@ -6,6 +6,12 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+    props: {
+        jobs: {
+            required: true,
+            type: Array,
+        }
+    },
   setup() {
     return {};
   },

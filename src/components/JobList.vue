@@ -1,15 +1,20 @@
 <template>
-  <div></div>
+  <div class="job-list">
+    <ul>
+        <li v-for="job in jobs" :key="job.id"></li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import Job from "@/types/Job";
+import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
     props: {
         jobs: {
             required: true,
-            type: Array,
+            type: Array as PropType<Job[]>,
         }
     },
   setup() {

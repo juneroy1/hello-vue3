@@ -54,11 +54,11 @@ export default defineComponent({
     // return { name, age };
 
     const jobs = ref<Job[]>([
-      {title: 'jq', location: 'lon test', salary: 100.22, id: '1'},
-      {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '2'},
-      {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '3'},
-      {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '4'},
-      {title: 'jq22', location: 'lon tes2t2', salary: 1020.22111, id: '5'}
+      {title: 'developer', location: 'Davao city', salary: 100000.00, id: '1'},
+      {title: 'software engineer', location: 'Panabo city', salary: 200000.00, id: '2'},
+      {title: 'mobile engineer', location: 'Iligan city', salary: 160000.00, id: '3'},
+      {title: 'AI engineer', location: 'Buhangin agdao', salary: 300000.00, id: '4'},
+      {title: 'Machine learning engineer', location: 'Unahan sa Panabo', salary: 400000.00, id: '5'}
     ])
     const order = ref<OrderTerm>('title');
     const handleClick = (term:OrderTerm) => {

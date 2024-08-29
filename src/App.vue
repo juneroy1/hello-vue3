@@ -101,4 +101,17 @@ button{
   cursor: pointer;
   font-weight: bold;
 }
+header .title{
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+}
 </style>

@@ -1,5 +1,6 @@
 <template>
  test
+ <button @click="changeName('jq dev')">change name</button>
 </template>
 
 <script lang="ts">

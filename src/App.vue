@@ -50,12 +50,12 @@ export default defineComponent({
       {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '4'},
       {title: 'jq22', location: 'lon tes2t2', salary: 1020.22111, id: '5'}
     ])
-
+    const order = ref<OrderTerm>('title');
     const handleClick = (term:OrderTerm) => {
-
+      order.value = term
     }
 
-    return {jobs, handleClick}
+    return {jobs, handleClick, order}
   },
   //  data(){
   //   return {

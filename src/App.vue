@@ -5,14 +5,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
+// let age: string | number = 25
 export default defineComponent({
   name: 'App',
   components: {
   },
    data(){
     return {
-      name: 'Jq'
+      name: 'Jq',
+      age: 25 as string | number,
     }
    },
    methods:{

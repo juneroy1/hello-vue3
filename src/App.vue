@@ -7,18 +7,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, reactive } from 'vue';
 // let age: string | number = 25
 export default defineComponent({
   name: 'App',
   components: {
   },
-   data(){
-    return {
-      name: 'Jq',
-      age: 25 as string | number,
-    }
-   },
+  setup(){
+    const state = reactive({
+      name: 'jq dev',
+      age: 25 as string | number
+    })
+  },
+  //  data(){
+  //   return {
+  //     name: 'Jq',
+  //     age: 25 as string | number,
+  //   }
+  //  },
    methods:{
     changeName(name: string){
       this.name = name

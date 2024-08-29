@@ -9,10 +9,13 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from "vue";
+import Job from "./types/Job";
 // let age: string | number = 25
 export default defineComponent({
   name: "App",
   setup() {
+
+
     // const state = reactive({
     //   name: 'jq dev',
     //   age: 25 as string | number
@@ -24,6 +27,8 @@ export default defineComponent({
     // const age = ref<number | string>(25);
 
     // return { name, age };
+
+    const jobs = ref<Job[]>([])
   },
   //  data(){
   //   return {

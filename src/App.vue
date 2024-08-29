@@ -28,7 +28,15 @@ export default defineComponent({
 
     // return { name, age };
 
-    const jobs = ref<Job[]>([])
+    const jobs = ref<Job[]>([
+      {title: 'jq', location: 'lon test', salary: 100.22, id: '1'},
+      {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '2'},
+      {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '3'},
+      {title: 'jq2', location: 'lon test2', salary: 100.22111, id: '4'},
+      {title: 'jq22', location: 'lon tes2t2', salary: 1020.22111, id: '5'}
+    ])
+
+    return {jobs}
   },
   //  data(){
   //   return {

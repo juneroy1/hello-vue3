@@ -1,9 +1,9 @@
 <template>
-  test
+  <!-- test
   {{ name }}
   {{ age }}
   <button @click="changeName('jq dev')">change name</button>
-  <button @click="changeAge('24')">change name</button>
+  <button @click="changeAge('24')">change name</button> -->
 </template>
 
 <script lang="ts">
@@ -20,10 +20,10 @@ export default defineComponent({
 
     // return {...toRefs(state)}
 
-    const name = ref<string>("juneroy");
-    const age = ref<number | string>(25);
+    // const name = ref<string>("juneroy");
+    // const age = ref<number | string>(25);
 
-    return { name, age };
+    // return { name, age };
   },
   //  data(){
   //   return {
@@ -32,12 +32,12 @@ export default defineComponent({
   //   }
   //  },
   methods: {
-    changeName(name: string) {
-      this.name = name;
-    },
-    changeAge(age: string | number) {
-      this.age = age;
-    },
+    // changeName(name: string) {
+    //   this.name = name;
+    // },
+    // changeAge(age: string | number) {
+    //   this.age = age;
+    // },
   },
 });
 </script>

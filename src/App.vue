@@ -1,15 +1,23 @@
 <template>
-  <div></div>
+  <div>
+    <JobList
+    :jobs="jobs"
+    />
+  </div>
   <!-- test
   {{ name }}
   {{ age }}
   <button @click="changeName('jq dev')">change name</button>
   <button @click="changeAge('24')">change name</button> -->
+
+
+
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from "vue";
 import Job from "./types/Job";
+import JobList from "./components/JobList.vue";
 // let age: string | number = 25
 export default defineComponent({
   name: "App",

@@ -5,6 +5,7 @@
     <button @click="handleClick('location')">order by location</button>
     <JobList
     :jobs="jobs"
+    :order="order"
     />
   </div>
   <!-- test

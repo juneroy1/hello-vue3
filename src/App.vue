@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, toRefs } from 'vue';
 // let age: string | number = 25
 export default defineComponent({
   name: 'App',
@@ -18,6 +18,8 @@ export default defineComponent({
       name: 'jq dev',
       age: 25 as string | number
     })
+
+    return {...toRefs(state)}
   },
   //  data(){
   //   return {

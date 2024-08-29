@@ -21,6 +21,9 @@ import JobList from "./components/JobList.vue";
 // let age: string | number = 25
 export default defineComponent({
   name: "App",
+  components:{
+    JobList
+  },
   setup() {
 
 

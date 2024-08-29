@@ -21,7 +21,7 @@ export default defineComponent({
     changeName(name: string){
       this.name = name
     },
-    changeAge(age: string){
+    changeAge(age: string | number){
       this.age = age
     }
    }

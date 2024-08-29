@@ -20,6 +20,7 @@
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from "vue";
 import Job from "./types/Job";
+import OrderTerm from "./types/OrderTerm";
 import JobList from "./components/JobList.vue";
 // let age: string | number = 25
 export default defineComponent({
@@ -50,7 +51,7 @@ export default defineComponent({
       {title: 'jq22', location: 'lon tes2t2', salary: 1020.22111, id: '5'}
     ])
 
-    const handleClick = (term:string) => {
+    const handleClick = (term:OrderTerm) => {
 
     }
 
